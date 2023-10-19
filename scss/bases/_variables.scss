@@ -1,0 +1,37 @@
+// Variables
+$color-principal:#05536b;
+$color-secundario:#9cf6f6;
+// Listas
+$font-size:60px,50px,40px,35px,30px,25px,20px,15px;
+// Mixins
+@mixin grid($grid, $column, $row){
+    display: $grid;
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+
+@mixin column-rows-only($column, $row){
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+}
+//Extends
+%flex-center{
+    display: flex;
+    align-items: center;
+}
+
+
+// Keyframes
+@keyframes slide{
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+    to{
+        margin-left: 0;
+
+        width: 100%;
+    }
+}
+
+

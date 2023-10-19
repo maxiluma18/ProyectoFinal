@@ -1,0 +1,18 @@
+/*!---------------------------HEADER--------------------------*/
+header{
+    background-color: $color-secundario;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 5px solid black;
+} 
+
+.logo{
+    margin: 7px 5px 2px;
+    width: 120px;
+    height: 120px;
+    transition: 2s;
+    &:hover{
+        transform: scale(1.2);
+    }
+}

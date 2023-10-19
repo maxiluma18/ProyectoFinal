@@ -1,0 +1,428 @@
+
+/*!---------------------------MAIN--------------------------*/
+/* Seccion Hero */
+.hero{
+    text-align: center;
+    border-bottom: 5px solid black;
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.363)),url(../images/fondo.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    p{
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: nth($font-size, 5);
+        color: $color-secundario;
+        background-color: $color-principal;
+    }
+    h2{
+        margin: 40px;
+        font-weight: bold;
+        color: $color-principal;
+        background-color: $color-secundario;
+        text-transform: uppercase;
+        font-size: nth($font-size, 2);
+        border: 8px solid $color-secundario;
+        display: inline-block;
+    }
+}
+
+/*Seccion historia*/
+.historia{
+    border-bottom: 5px solid black;
+    background-color:  $color-principal;
+    text-align: center;
+    height: auto;
+    h2{
+        text-transform: uppercase;
+        font-size: nth($font-size, 2);
+        color: $color-secundario;
+        margin-bottom: 10px
+    }
+}
+
+
+/* Seccion Trofeos */
+.trofeos{
+    text-align: center;
+    border-bottom: 5px solid black;
+    background-color:  $color-secundario;
+    h2{
+        text-transform: uppercase;
+        color: $color-principal;
+        font-size: nth($font-size, 2);
+        padding: 5px;
+    }
+    .trofeos-contenedor{
+        @include grid( grid, repeat(2, 500px), 350px 450px);
+        gap: 60px;
+        justify-content:center;
+        .trofeos-champions{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            img{
+                width: 600px;
+                transition: 1s ease;
+                &:hover{
+                    width: 700px;
+                    height: 360px;
+                }
+            }
+            p{
+                text-transform: uppercase;
+                color:$color-principal;
+                font-size: 20px;
+            }
+        }
+        div{
+            img{
+                width: 480px;
+                height: 350px;
+                margin: auto;
+                border: 3px solid black;
+                transition:  1s ease;
+                &:hover{
+                    width: 510px;
+                }
+            }
+            p{
+                text-transform: uppercase;
+                color:$color-principal;
+                font-size: 20px;
+            }
+        }
+    }
+    a{
+        color: $color-principal;
+        font-size: nth($font-size, 5);
+        text-transform: uppercase;
+        transition: font-size 1s ease ;
+        &:hover{
+            background-color:$color-principal;
+            color: $color-secundario;
+            font-size: nth($font-size, 4);
+        }
+    }
+}
+
+/* Seccion Jugadores */
+.jugadores{
+    text-align: center;
+    background-color:  $color-principal;
+    border-bottom: 5px solid black;
+    h2{
+        text-transform: uppercase;
+        color:  $color-secundario;
+        font-size: nth($font-size, 2);
+        padding: 5px;
+    }
+    .jugadores-contenedor{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            position: relative;
+            margin-bottom: 20px;
+            img{
+                margin-top: 20px;
+                height: 300px;
+                border: 5px solid black;
+                background-color:   $color-secundario;
+                transition: 1s ease;
+                &:hover{
+                    box-shadow: 4px 7px 77px 37px rgba(156,246,246,0.93) inset;
+                    -webkit-box-shadow: 4px 7px 77px 37px rgba(156,246,246,0.93) inset;
+                    -moz-box-shadow: 4px 7px 77px 37px rgba(156,246,246,0.93) inset;
+                    background-color: $color-principal;
+                    height: 350px;
+                }
+            }
+            p{
+                color: $color-secundario;
+                text-transform: uppercase;
+                font-size: nth($font-size, 3);
+            }
+            small{
+                position: absolute;
+                top: 20px;
+                right: 0px;
+                font-size: nth($font-size, 2);
+                color:  $color-secundario;
+                background-color: $color-principal;
+                border: 5px solid black;
+            }
+        }
+    }
+    a{
+        color:  $color-secundario;
+        font-size: nth($font-size, 5);
+        text-transform: uppercase;
+        transition: font-size 1s ease ;
+        &:hover{
+            color:   $color-principal;
+            background-color:  $color-secundario;
+            font-size: nth($font-size, 4);
+        }
+    }
+}
+
+/* Seccion Calendario*/
+.calendario{
+    width: 100%;
+    background-color: $color-secundario ;
+    text-align: center;
+    h2{
+        font-size: nth($font-size, 2);
+        text-transform: uppercase;
+        color: $color-principal;
+        margin-bottom: 10px;
+    }
+    .calendario-1{
+        margin: 0 50px;
+        @extend %flex-center;
+        justify-content: space-evenly;
+        border: 5px solid $color-principal;
+        margin-bottom: 30px;
+        p{
+            width: 250px;
+            font-size: nth($font-size, 5);
+            color: $color-principal;
+            text-transform: uppercase;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        div{
+            width: 250px;
+            a{
+                text-decoration: none;
+                font-size: nth($font-size, 5);
+                color: $color-secundario;
+                background-color: $color-principal;
+                text-transform: uppercase;
+                transition: font-size 1s ease ;
+                &:hover{
+                    font-size: nth($font-size, 4);
+                }
+            }
+        }
+    }
+    a{
+        font-size: nth($font-size, 5);
+        margin-bottom: 10px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: $color-principal;
+        transition: font-size 1s ease ;
+        &:hover{
+            font-size: nth($font-size, 4);
+            background-color: $color-principal;
+            color:  $color-secundario;
+        }
+    }
+}
+
+/* Seccion merchandising*/
+.merchandising{
+    border-top: 5px solid #000;
+    background-color: $color-principal;
+    h2{
+        text-align: center;
+        font-size: nth($font-size, 2);
+        text-transform: uppercase;
+        color:  $color-secundario;
+        margin-bottom: 20px;
+    }
+    .productos-grid{
+        @include grid(grid, repeat(3,300px), 300px 300px);
+        justify-content: center;
+        gap: 60px;
+        .grid-item{
+            border: 2px solid black;
+            @extend %flex-center;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: $color-secundario;
+            p{
+                margin-top: 10px;
+                text-decoration: none;
+                text-transform: uppercase;
+                color:  black;
+                font-size: nth($font-size, 6);
+            }
+            img{
+                height: 200px;
+                width: 200px;
+            }
+            a{
+                font-size: 20px;
+                color:  $color-secundario;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color:  black;
+                margin-bottom: 5px;
+                width: 150px;
+                text-align: center;
+            }
+            &:hover{
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+/**!------------PAGES---------------**/ 
+
+/* Pages=calendario*/
+.page-calendario{
+    width: 100%;
+    background-color: $color-secundario ;
+    text-align: center;
+    h2{
+        font-size: nth($font-size, 2);
+        text-transform: uppercase;
+        color: $color-principal;
+        margin-bottom: 10px;
+    }
+    .calendario-1{
+        margin: 0 50px;
+        @extend %flex-center;
+        justify-content: space-evenly;
+        border: 3px solid $color-principal;
+        margin-bottom: 15px;
+        p{
+            width: 250px;
+            font-size: nth($font-size, 5);
+            color: $color-principal;
+            text-transform: uppercase;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        div{
+            width: 250px;
+            a{
+                text-decoration: none;
+                font-size: nth($font-size, 5);
+                color: $color-secundario;
+                background-color: $color-principal;
+                text-transform: uppercase;
+                transition: font-size 1s ease ;
+                &:hover{
+                    font-size: nth($font-size, 4);
+                }
+            }
+        }
+    }
+    .last{
+        margin-bottom: 0;
+    }
+}
+
+/*Pages=Jugadores*/
+.page-jugadores{
+    background-color: $color-principal;
+    text-align: center;
+    h2{
+        color: $color-principal;
+        text-transform: uppercase;
+        font-size: nth($font-size, 3);
+        background-color: $color-secundario;
+    }
+    .jugadores-city{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        div{
+            position: relative;
+            img{
+                height: 300px;
+                background-color: $color-secundario;
+                border: 5px solid black;
+                transition: 1s ease;
+                &:hover{
+                    background-color:$color-principal ;
+                    color: $color-secundario;
+                    box-shadow: 4px 7px 77px 37px rgba(156,246,246,0.93) inset;
+                    -webkit-box-shadow: 4px 7px 77px 37px rgba(156,246,246,0.93) inset;
+                    -moz-box-shadow: 4px 7px 77px 37px rgba(156,246,246,0.93) inset;
+                    background-color: $color-principal;
+                    height: 350px;
+                }
+            }
+            p{
+                color: $color-secundario;
+                text-transform: uppercase;
+                font-size: 23px;
+            }
+            small{
+                font-size: nth($font-size, 2);
+                border: 5px solid black;
+                color: $color-secundario;
+                background-color: $color-principal;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+        }
+    }
+}
+
+/*Pages=Contacto*/
+.formulario{
+    background-color: $color-principal;
+    padding: 20px 30px 0px 30px;
+    width: 100%;
+    h2{
+        text-decoration: underline;
+        text-transform: uppercase;
+        color: $color-secundario;
+        font-size: nth($font-size, 1);
+        padding: 5px;
+        text-align: center;
+    }
+    div{
+        width: 100%;;
+        border-bottom: 5px solid #fffb00d2;
+        label{
+            font-size: nth($font-size, 3);
+            color: $color-secundario;
+            display: block;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+        input{
+            width: 100%;
+            display: block;
+            padding: 10px;
+            border: 5px solid $color-principal;
+            border-radius: 5px;
+            background-color: $color-secundario;
+        }
+        textarea{
+            width: 100%;
+            display: block;
+            padding: 10px;
+            border: 5px solid $color-principal;
+            border-radius: 5px;
+            background-color: $color-secundario;
+        }
+    }
+    button{
+        text-align: center;
+        margin-top: 20px;
+        background-color: #fffb00d2;
+        height: 50px;
+        text-transform: uppercase;
+        color: $color-principal;
+        font-size: 20px;
+        margin-right: 10px;
+        margin-bottom: 40px;
+        width: 200px;
+        border: none;
+    }
+}

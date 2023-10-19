@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/*!---------------------------RESET--------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+
+/*!---------------------------Clases de Bootstrap--------------------------*/
+
+header{
+    .navbar{
+        .container-fluid{
+            .collapse{
+                .navbar-nav{
+                    .nav-link{
+                        transition: 2s;
+                        &:hover{
+                            transform: scale(1.2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*Seccion historia*/
+.carousel-inner{
+    margin-bottom: 20px;
+    .carousel-item{
+        img{
+            height: 400px;
+            width: 700px;
+            border: 3px solid #000;
+        }
+        p{
+            color: $color-secundario;
+        }
+    }
+}
+
+/*Pages Trofeos*/
+.page-trofeos{
+    background-color:$color-principal;
+    .titulo{
+        color: $color-secundario;
+    }    
+}
+.texto{
+    color: $color-secundario;
+    font-size: nth($font-size, 7);
+}

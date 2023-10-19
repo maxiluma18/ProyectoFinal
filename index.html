@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <meta name="description" content="Un Sitio Web tributo en donde encontrarás la inmensa historia, los trofeos ganados, los jugadores, los próximos partidos y el variado merchandising del Manchester City FC. ¡Descúbrelo todo aquí!">
+    <meta name="keywords" content="Manchester, City, Cityvs, city, manchester, mancity, cityzens, campeon, inglaterra, futbol, etihad">
+    <title>Manchester City FC | Come On City!</title>
+    <link rel="shortcut icon" href="./images/favicon-16x16.png" type="image/x-icon">
+    <!-- OP (lo coloco cuando suba el sitio web a netlify) -->
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-info-emphasis ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img class="logo"  src="./images/logo.png" alt="Logo Manchester City"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link text-uppercase me-4 fs-3" href="./pages/calendario.html">Calendario</a>
+                        <a class="nav-link text-uppercase me-4 fs-3" href="./pages/trofeos.html">Trofeos</a>
+                        <a class="nav-link text-uppercase me-4 fs-3" href="./pages/jugadores.html">Jugadores</a>
+                        <a class="nav-link text-uppercase me-4 fs-3" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section class="hero">
+            <p>Un Sitio Web dedicado al equipo de fútbol de Inglaterra</p>
+            <h2>Manchester City FC</h2>
+        </section>
+
+
+        <section class="historia">
+            <h2>Historia</h2>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="./images/historia1.jpg" alt="...">
+                        <p class="mt-2 ms-2 me-2 fs-5">El Manchester City Football Club, conocido como Manchester City, es un club de fútbol de la ciudad de Mánchester, Inglaterra, que juega en la Premier League. Fue fundado el 23 de noviembre de 1880</p>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/historia2.webp"  alt="...">
+                        <p class="mt-2 ms-2 me-2  fs-5 ">El club disputa sus partidos en el Etihad Stadium desde 2003. El club adoptó su camiseta de local celeste en 1894 en la primera temporada de la versión actual del club, y se han utilizado desde entonces.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/historia3.jpeg"  alt="...">
+                        <p class="mt-2 ms-2 me-2 fs-5 ">Después de recuperar su sitio en la Premier League, en 2008 Abu Dhabi United Group for Development and Investment, un grupo inversor de los Emiratos Árabes con Mansour bin Zayed Al-Nahyan al mando, se hizo con el control del club.  </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/historia4.webp"  alt="...">
+                        <p class="mt-2 ms-2 me-2 fs-5 ">Financieramente, el club resulta ser uno de los más ricos del mundo, en la temporada 2013-2014, con una estimación de €414,4 millones. Del mismo modo, la revista Forbes lo calificó como el quinto club más valioso del mundo al 2015.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/historia5.webp"  alt="...">
+                        <p class="mt-2 ms-2 me-2 fs-5 ">Para la temporada 2016/17, se confirmó el fichaje de Pep Guardiola como entrenador del equipo. En la temporada 2017/18, el City logro su primer título en la era Guardiola, donde se coronaron campeones de la Copa de la Liga. </p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/historia6.webp"  alt="...">
+                        <p class="mt-2 ms-2 me-2 fs-5 ">Sin duda, la mejor temporada del City, fue en la 2022/2023, en donde lograron ganar la Premier League, FA Cup, Supercopa de la UEFA, y por primera vez en su historia se consagraron campeones de la UEFA Champions League. </p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="trofeos">
+                <h2>Trofeos</h2>
+                <div class="trofeos-contenedor">
+                    <div class="trofeos-champions">
+                        <img  src="./images/champions_trofeo.jpg" alt="Champions League">
+                        <p>Consagrado campeón de la Champions League por primera y única vez (por ahora) en la temporada 2022/2023. </p>
+                    </div>
+                    <div>
+                        <img src="./images/premier-league.webp" alt="Premier League">
+                        <p>Consagrado campeón de la Premier League un total de 9 (nueve) veces. La ultima consagración fue en la temporada 2022/2023.</p>
+                    </div>
+                    <div>
+                        <img src="./images/carabao.jpeg" alt="Carabao Cup">
+                        <p>Consagrado campeón de la Carabao Cup un total de 8 (ocho) veces. La ultima consagración fue en la temporada 2020/2021.</p>
+                    </div>
+                </div>
+                <a href="./pages/trofeos.html"> Ver más trofeos</a>
+        </section>
+
+        <section class="jugadores">
+            <h2>Jugadores</h2>
+            <div class="jugadores-contenedor">
+                <div>
+                    <img src="./images/julian-alvarez.webp" alt="Julian Alvarez">
+                    <p>Julián Álvarez</p>
+                    <small>19</small>
+                </div>
+                <div>
+                    <img src="./images/erling-haaland.webp" alt="Haaland Erling">
+                    <p>Erling Haaland</p>
+                    <small>9</small>
+                </div>
+                <div>
+                    <img src="./images/kevin-de-bruyne.webp" alt="Kevin De Bruyne">
+                    <p>Kevin De Bruyne</p>
+                    <small>23</small>
+                </div>
+            </div>
+            <a href="./pages/jugadores.html">Ver más jugadores </a>
+        </section>
+
+        <section class="calendario">
+            <h2>Proximos Partidos</h2>
+            <div class="calendario-1" data-aos="flip-up">
+                <p> Manchester city</p>
+                <img src="./images/logo.png" alt="Escudo Man City">
+                <div>
+                    <p>25 sep</p>
+                    <p> 17:00 hs</p>
+                    <a href="#">Entrada</a>
+                </div>
+                <img src="./images/man-united.png" alt="Escudo Man United">
+                <p> Manchester United</p>
+            </div>
+            <div class="calendario-1" data-aos="flip-down"  >
+                <p>Everton Fc</p>
+                <img src="./images/everton-logo-escudo.png" alt="Escudo Everton">
+                <div>
+                    <p>30 sep</p>
+                    <p>10:00 hs</p>
+                    <a href="#">Entrada</a>
+                </div>
+                <img src="./images/logo.png" alt="Escudo Man City">
+                <p>Manchester City</p>
+            </div>
+            <a href="./pages/calendario.html">Ver calendario completo</a>
+        </section>
+
+        <section class="merchandising">
+            <h2>Productos</h2>
+            <div class="productos-grid">
+                <div class="grid-item" data-aos="zoom-in">
+                    <p>Remera</p>
+                    <img src="./images/t-shirt.webp" alt="Producto Remera">
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="grid-item" data-aos="zoom-in">
+                    <p>Buzo</p>
+                    <img src="./images/buzo.webp" alt="Producto Buzo">
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="grid-item" data-aos="zoom-in">
+                    <p>Short</p>
+                    <img src="./images/short.webp" alt="Producto Short">
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="grid-item" data-aos="zoom-in">
+                    <p>camiseta</p>
+                    <img src="./images/camiseta.webp" alt="Producto Camiseta">
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="grid-item" data-aos="zoom-in">
+                    <p>guantes</p>
+                    <img src="./images/guantes.webp" alt="Producto Guantes">
+                    <a href="#">Comprar</a>
+                </div>
+                <div class="grid-item" data-aos="zoom-in">
+                    <p>balon</p>
+                    <img src="./images/balon.webp" alt="Producto Balon">
+                    <a href="#">Comprar</a>
+                </div>
+                <br>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="sede">
+                <h3> ¿Donde Encontrarnos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2374.1789417901887!2d-2.2029676227026753!3d53.48313247232934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb1186efbbc23%3A0x62c4dc9692d4900d!2sManchester%20City%20Football%20Club!5e0!3m2!1ses-419!2sar!4v1694136804892!5m2!1ses-419!2sar"
+                    width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/mancity/" target="_blank"><img src="./images/instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://twitter.com/mancity" target="_blank"><img src="./images/twitter.png" alt="Twitter"></a>
+                <a href="https://www.youtube.com/@mancity" target="_blank"><img src="./images/youtube.png"
+                        alt="Youtube"></a>
+                <a href="https://www.tiktok.com/@mancity" target="_blank"><img src="./images/tik-tok.png"
+                        alt="Tik Tok"></a>
+            </div>
+        </div>
+            <h4> Manchester City - Todos los derechos reservados.</h4>
+    </footer>
+    <!-- BS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
