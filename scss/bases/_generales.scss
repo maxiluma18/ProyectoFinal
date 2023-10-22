@@ -57,3 +57,12 @@ header{
     color: $color-secundario;
     font-size: nth($font-size, 7);
 }
+.imagen{
+    transition: 2s;
+    &:hover{
+        transform: scale(1.04);
+        box-shadow: 10px 10px 48px 29px rgba(156,246,246,0.58);
+        -webkit-box-shadow: 10px 10px 48px 29px rgba(156,246,246,0.58);
+        -moz-box-shadow: 10px 10px 48px 29px rgba(156,246,246,0.58);
+    }
+}
